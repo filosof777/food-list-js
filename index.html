@@ -7,14 +7,38 @@
   <title>Document</title>
   <!-- links -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/flexbox-grid.css">
   <link rel="stylesheet" href="css/main.min.css">
   <!-- /links -->
 </head>
 <body>
   <!-- header -->
   <header>
-
+    <template class="food-temp">
+      <li class="food-item">
+        <div class="food-inner">
+          <img class="food-img" src="img/food-1.jfif" alt="">
+          <div class="food-desc">
+            <h2 class="food-title"></h2>
+            <p class="food-sum"></p>
+            <div class="btn-content">
+              <a class="food-btn" href="#">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </template>
+    <div class="container">
+      <div class="d-flex justify-content-between">
+        <ul class="food-list"></ul>
+        <ul class="food-price">
+          <div class="price-inner">
+            <h2 class="price-title">Subtotal: <span class="price-total"></span></h2>
+            <h2 class="price-title">Tax: <span class="price-total"></span></h2>
+            <h2 class="price-title">Total: <span class="price-total"></span></h2>
+          </div>
+        </ul>
+      </div>
+    </div>
   </header>
   <!-- /header -->
 
@@ -32,6 +56,7 @@
 
   <!-- scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/food.js"></script>
   <script src="js/main.js"></script>
   <!-- /scripts -->
 </body>
