@@ -19,14 +19,14 @@ elFoodList.addEventListener('click', (e) => {
     let itemNode = itemPrice.cloneNode(true);
     let cancelBtn = document.createElement('button');
     cancelBtn.className = ('btn btn-danger');
-    cancelBtn.textContent = "Cancel";
+    cancelBtn.textContent = "Delete";
     itemNode.appendChild(cancelBtn);
     elFoodPrice.appendChild(itemNode);
   }
 });
 
 elFoodPrice.addEventListener('click', (e) => {
-  if(e.target.textContent.toLowerCase() == "cancel") {
+  if(e.target.textContent.toLowerCase() == "delete") {
     e.target.parentNode.style.display = 'none'
   }
 });
